@@ -1,0 +1,77 @@
+/*
+#app * {
+    border: 1px solid ;
+}
+*/
+
+/* utility */
+
+:is(.top-page, .sidebar) ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* top page */
+
+.top-page {
+    background-color: white;
+    color: black;
+    height: 70px;
+}
+
+.logo-mobile {
+    width: 50px;
+}
+
+.bell-icon {
+    color: goldenrod;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar .searchbar-input {
+    height: 42px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    padding-left: 40px;
+}
+
+.search-bar .searchbar-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+/* sidebar */
+
+.sidebar {
+    background-color: #11283e;
+    width: 70px;
+    background-image: url(/img/sidebar-bg.png);
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+
+.sidebar nav,
+.sidebar nav > ul {
+    display: contents;
+}
+
+/* header fisso */
+
+
+
+/*mediaq*/
+
+@media (min-width: 992px) {
+    .sidebar {
+        width: 140px;
+    }
+}
